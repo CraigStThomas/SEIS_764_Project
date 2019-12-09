@@ -21,6 +21,8 @@ export default function Photos() {
      if (imageInt >= 1 && imageInt <= 788) {
        const newImageString = imageInt.toString().length < 2 ? `0${imageInt}` : `${imageInt}`;
          imageInt <= 788 ? setImageNumber(newImageString) : setImageNumber('00');
+     } else {
+       setImageNumber('00');
      }
    }
    handleSetImageNumber(+imageInt);
