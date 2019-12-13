@@ -12,7 +12,7 @@
 
 - Contains the images used by the cell_object_detection and the LSTM_frame_predictions
 
-- Images are divided into 6 different captures with each of them containing 3 different color channels (green, red, and colorless)
+- The original images were divided into 6 different captures with each of them containing 3 different color channels (green, red, and colorless)
 The color channels are determined by the phase-dependent nature of replication licensing factors Cdt1 and Geminin.
 Also referenced as the Fluorescent Ubiquitination-based  Cell Cycle Indicator (FUCCI)
 
