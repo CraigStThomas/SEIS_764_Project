@@ -8,9 +8,24 @@
   - Jeffrey Kropelnicki
 - Presentation: [SEIS764_Project_Presentation](SEIS764_Project_Presentation.pptx)
 
-## [cell_cycle_detector](cell_cycle_detector)
+## [images](images)
 
-- TODO: Write instructions.
+- Folder containing the images used by the cell_object_detection and the LSTM_frame_prediction, the program
+that creates the annotation files necessary for object detection in Detecron2, and the program that creates
+the blending images
+
+- Programs
+ - generate_cell_detection_dataset.py
+  - To run, simply start program and it will find the images based on their relative path
+  - Reads from the ./images/raw folder and outputs the annotations
+    and the annotation images to ./images/raw/cell_obj_detection_images
+ - blend_raw_images.py
+  - To run, simply start program and it will find the images based on their relative path
+  - Reads from the ./images/raw folder and outputs the blended images to the ./images/{image set}/
+
+## [cell_object_detection](cell_object_detection)
+- Folder containing the jupyter notebook for the cell object detection
+ - To run, please follow the guide in the jupyter notebook which will instruct you how to setup the Azure VM.
 
 ## [LSTM_frame_prediction](LSTM_frame_prediction)
 
