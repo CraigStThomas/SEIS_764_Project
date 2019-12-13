@@ -8,10 +8,6 @@
   - Jeffrey Kropelnicki
 - Presentation: [SEIS764_Project_Presentation](SEIS764_Project_Presentation.pptx)
 
-## [images](images)
-
-
-
 ## [cell_object_detection](cell_object_detection)
 - Contains the jupyter notebook for the cell object detection
   - To run, please follow the guide in the Jupyter Notebook which will instruct you how to setup the Azure VM.
