@@ -10,22 +10,7 @@
 
 ## [images](images)
 
-- Contains the images used by the cell_object_detection and the LSTM_frame_predictions
 
-- The original images were divided into 6 different captures with each of them containing 3 different color channels (green, red, and colorless)
-The color channels are determined by the phase-dependent nature of replication licensing factors Cdt1 and Geminin.
-Also referenced as the Fluorescent Ubiquitination-based  Cell Cycle Indicator (FUCCI)
-
-- Programs:
-  - generate_cell_detection_dataset.py
-    - Program to create the annotations used by the cell object detection
-    - To run, simply start program and it will find the images based on their relative path
-    - Reads from the ./images/raw folder and outputs the annotations
-    and the annotation images to ./images/raw/cell_obj_detection_images
-  - blend_raw_images.py
-    - Program to create the blended images used by the LSTM frame prediction
-    - To run, simply start program and it will find the images based on their relative path
-    - Reads from the ./images/raw folder and outputs the blended images to the ./images/{image set}/
 
 ## [cell_object_detection](cell_object_detection)
 - Contains the jupyter notebook for the cell object detection
@@ -74,7 +59,28 @@ Also referenced as the Fluorescent Ubiquitination-based  Cell Cycle Indicator (F
   4. Navigate to [http://localhost:3000/](http://localhost:3000/)
 
 ## [images](images)
-  - this directory holds all images used for all our models
-    - A01, A02, A03, A04, A05, A06: (need description on what these are and how they were made???)
-    - A0x_compressed: these images are compressed for use with memory and speed limited computing resources.  They currently hold resized versions of the original images (original: 1328 x 1048, resized: 120x95).  A script file (images/compress.sh) can be used to resize the images to different sizes.
-  - dependencies for compress.sh: [imagemagick](https://imagemagick.org/index.php)
+  - Contains the images used by the cell_object_detection and the LSTM_frame_predictions
+
+  - The original images were divided into 6 different captures with each of them containing 3 different color channels (green, red, and colorless)
+  The color channels are determined by the phase-dependent nature of replication licensing factors Cdt1 and Geminin.
+  Also referenced as the Fluorescent Ubiquitination-based  Cell Cycle Indicator (FUCCI)
+
+  - Programs:
+    - generate_cell_detection_dataset.py
+      - Program to create the annotations used by the cell object detection
+      - To run, simply start program and it will find the images based on their relative path
+      - Reads from the ./images/raw folder and outputs the annotations
+      and the annotation images to ./images/raw/cell_obj_detection_images
+    - blend_raw_images.py
+      - Program to create the blended images used by the LSTM frame prediction
+      - To run, simply start program and it will find the images based on their relative path
+      - Reads from the ./images/raw folder and outputs the blended images to the ./images/{image set}/
+    - compress.sh
+      - used to resize the images to different sizes
+        - source folders = A0x
+        - destination folders = A0x_compressed
+
+  - Directories
+    - A01, A02, A03, A04, A05, A06: 3 channel color images (high-resolution)
+    - A0x_compressed: these images are compressed for use with memory and speed limited computing resources.  They currently hold resized versions of the original images (original: 1328 x 1048, resized: 120x95).
+
