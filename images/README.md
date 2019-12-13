@@ -12,21 +12,21 @@ The blended files (used by the LSTM Frame Prediction) are all provided, as they 
 
 Python Packages Required
 
-Pillow
-PyWavelets
-cycler
-decorator
-imageio
-kiwisolver
-matplotlib
-networkx
-numpy
-opencv-python
-pysparsing
-python-dateutil
-scikit-image
-scipy
-six
+-Pillow
+-PyWavelets
+-cycler
+-decorator
+-imageio
+-kiwisolver
+-matplotlib
+-networkx
+-numpy
+-opencv-python
+-pysparsing
+-python-dateutil
+-scikit-image
+-scipy
+-six
 
 This program reads in images from the ./raw folder. it then attempts to remove
 salt and pepper noise from the images by applying a bilateral filter and median blur to the images.  It then
@@ -40,12 +40,12 @@ and it should find the folders and images based on their relative locations.
 
 --------------------------------------- blend_raw_images.py -----------------------------------------------------------
 
-Python Packages Required
+Python Packages Required:
 
-Pillow
-numpy
-opencv-python
-os
+-Pillow
+-numpy
+-opencv-python
+-os
 
 This program reads in both the d0 and the d2 file from the ./raw and then attempts to remove
 salt and pepper noise from the images by applying a bilateral filter and median blur to the images.  It then
