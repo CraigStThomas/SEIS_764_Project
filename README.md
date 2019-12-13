@@ -15,7 +15,6 @@
 ## [LSTM_frame_prediction](LSTM_frame_prediction)
 
 - dependencies for lstm.py: tensor flow, keras, numpy, matplotlib, opencv
-- dependencies for compress.sh: [imagemagick](https://imagemagick.org/index.php)
 - To run the application:
   - run with the command: python lstm.py
     - output files are the predicted images, labelled with their order
@@ -54,3 +53,9 @@
   2. Run `yarn` to install the application's dependencies.
   3. Run `yarn start` to start the application.
   4. Navigate to [http://localhost:3000/](http://localhost:3000/)
+
+## [images](images)
+  - this directory holds all images used for all our models
+    - A01, A02, A03, A04, A05, A06: (need description on what these are and how they were made???)
+    - A0x_compressed: these images are compressed for use with memory and speed limited computing resources.  They currently hold resized versions of the original images (original: 1328 x 1048, resized: 120x95).  A script file (images/compress.sh) can be used to resize the images to different sizes.
+  - dependencies for compress.sh: [imagemagick](https://imagemagick.org/index.php)
