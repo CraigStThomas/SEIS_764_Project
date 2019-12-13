@@ -14,7 +14,24 @@
 
 ## [LSTM_frame_prediction](LSTM_frame_prediction)
 
-- TODO: Write instructions.
+- dependencies for lstm.py: tensor flow, keras, numpy, matplotlib, opencv
+- dependencies for compress.sh: [imagemagick](https://imagemagick.org/index.php)
+- To run the application:
+  - run with the command: python lstm.py
+    - output files are the predicted images, labelled with their order
+      - y_test_combined_*.png <-- these represent the results of prediction method 1 ("first method" as described in slide 15 of provided pptx presentation)
+      - future_combined_*.png <-- these represent the results of prediction method 2 ("second method" as described in slide 15 of provided pptx presentation)
+      - for both sets of outputs, the y_true image appears on the left, and the y_predicted iamge appears on the right
+      - you can control which sets of predictions are created by commenting out either line 138 or 139
+    - the submitted code file should read the provided weights file (weights_gp.h5) and make predictions.  You can train your own model by commenting out line 136, and uncommenting line 134 (and optionally line 135)
+    - important model hyperparameters:
+      - model architecture: lines 16-36
+        - LSTM layer count, filter count, kernel size, input shape
+      - source and target data: lines 42-47
+        - sequence size, sequence count, image dimensions, image directories to use (by default is only 1...you need lots of memory to use more than 1)
+      - training parameters: line 134
+        - epoch count, batch size, size of validation split
+
 
 ## [matlabMotionBasedMultipleObjectTracking](matlabMotionBasedMultipleObjectTracking)
 
