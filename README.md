@@ -10,16 +10,20 @@
 
 ## [images](images)
 
-- Contains the images used by the cell_object_detection and the LSTM_frame_prediction, the program
-that creates the annotation files necessary for object detection in Detecron2, and the program that creates
-the blending images
+- Contains the images used by the cell_object_detection and the LSTM_frame_predictions
+
+- Images are divided into 6 different captures with each of them containing 3 different color channels (green, red, and colorless)
+The color channels are determined by the phase-dependent nature of replication licensing factors Cdt1 and Geminin.
+Also referenced as the Fluorescent Ubiquitination-based  Cell Cycle Indicator (FUCCI)
 
 - Programs:
   - generate_cell_detection_dataset.py
+    - Program to create the annotations used by the cell object detection
     - To run, simply start program and it will find the images based on their relative path
     - Reads from the ./images/raw folder and outputs the annotations
     and the annotation images to ./images/raw/cell_obj_detection_images
   - blend_raw_images.py
+    - Program to create the blended images used by the LSTM frame prediction
     - To run, simply start program and it will find the images based on their relative path
     - Reads from the ./images/raw folder and outputs the blended images to the ./images/{image set}/
 
